@@ -26,9 +26,8 @@ import java.util.Arrays;
 
 public class ZywOo {
 	public static int[] take(int[] arr, int n) {
-		if (arr.length == 0) {
-			int[] resultat = null;
-			return resultat;
+		if (n > arr.length) {
+			return arr;
 		}
 		int[] resultat = Arrays.copyOfRange(arr, 0, n);
 		return resultat; // your code;

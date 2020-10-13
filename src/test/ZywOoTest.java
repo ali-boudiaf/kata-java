@@ -30,7 +30,7 @@ public class ZywOoTest {
 	@Test
 	public void test3() {
 		assertArrayEquals("doit retourner tous les items compris dans la plage 0 à 61",
-				new int[] { -7, 37, 44, -38, -70, -9 }, ZywOo.take(new int[] { -7, 37, 44, -38, -70, -9 }, 6));
+				new int[] { -7, 37, 44, -38, -70, -9 }, ZywOo.take(new int[] { -7, 37, 44, -38, -70, -9 }, 61));
 	}
 
 	@Test

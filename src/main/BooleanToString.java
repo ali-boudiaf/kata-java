@@ -4,7 +4,7 @@ public class BooleanToString {
 	public static String convert(boolean b){
 		
 //		Une façon de faire
-//		return b ? "true" : "false";
+		return b ? "true" : "false";
 		
 //		Une façon de faire
 //		return Boolean.toString(b);

@@ -5,13 +5,13 @@ import java.util.ArrayList;
 
 public class ToBinary {
 	public static int toBinary(int n) {
-		// Stocker le reste dans un tableau lorsque le nombre est par 2 (donc faire
+		// Stocker le reste dans un tableau lorsque le nombre est divisible par 2 (donc faire
 		// modulo 2)
 		// Divise le nombre par 2
-		// Répéter tant que nombre donnée > 0
+		// Rï¿½pï¿½ter tant que nombre donnï¿½e > 0
 		// Inverser le tableau
 
-		// Déclarer un tableau pour recevoir le reste du nombre modulo 2
+		// Dï¿½clarer un tableau pour recevoir le reste du nombre modulo 2
 		int[] resteNombreModulo2 = new int[32];
 
 		int i = 0;
@@ -26,19 +26,13 @@ public class ToBinary {
 		}
 
 		int resultat = 0;
+		StringBuilder tableauBinaireEnChaine = new StringBuilder();
 
 		// Inverser l'ordre du tableau
 		for (int j = i - 1; j >= 0; j--) {
-			StringBuilder tableauBinaireEnChaine = new StringBuilder();
 			tableauBinaireEnChaine.append(resteNombreModulo2[j]);
 			resultat = Integer.parseInt(tableauBinaireEnChaine.toString());
 		}
-		// System.out.println(resultat);
 		return resultat;
 	}
-
-	// public static void main(String[] args) {
-	// int n = 10;
-	// toBinary(n);
-	// }
 }

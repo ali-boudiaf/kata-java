@@ -11,7 +11,7 @@ class ToStringTest {
 
 	@Test
 	public void test1() {
-		assertEquals("123", ToString.convertIntToString(123));
+		assertEquals("123", ToString.a);
 	}
 
 }
